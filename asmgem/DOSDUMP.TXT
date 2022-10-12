@@ -1,0 +1,2 @@
+Dos a DOS "coredump".  It writes the contents of the first meg of memory
+to the file "m".

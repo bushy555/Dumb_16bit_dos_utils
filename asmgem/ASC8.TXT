@@ -1,0 +1,5 @@
+ASC8.COM is a program whose binary content is made completely of displayable
+ASCII characters.  It is a functioning program that does absolutely nothing.
+The program uses self modifying code which breaks the execution pipe
+contraints of older x86s.  In fact it requires a Pentium to run.  The author
+is me (Paul Hsieh.)

@@ -1,0 +1,22 @@
+John Kirwan was asking for the smallest implementation of the "gcd" (greatest
+common divisor of two numbers such gcd(0,0)==1 and gcd(x,0)==gcd(0,x)==x) 
+function by a C compiler.  There were a couple embarassing (for the C 
+compilers) responses.  For fun, I submitted the following hand optimized
+solution:
+
+ neg eax
+ jz l3
+l4:
+ neg eax
+ xchg edx,eax
+l1:
+ sub eax,edx
+ jg l1
+ jnz l4
+l3:
+ add eax,edx
+ jnz l2
+ inc eax
+l2:
+
+I suspect you could achieve a similarly small piece of code using div.

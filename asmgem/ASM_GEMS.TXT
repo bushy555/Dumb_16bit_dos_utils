@@ -1,0 +1,15 @@
+This is a small collection of really small programs.  Each of the
+four programs below satisfies a nontrivial goal as described by
+their associated text file.
+
+    8  ASC8.COM
+   19  GCD.TXT (source only)
+   20  SN.COM
+   30  SERP.COM
+   32  DOSDUMP.COM
+  208  LIFESMLL.COM (has since been improved as documented the PT&T)
+
+These were posted at various times during 1996 and 1997 to the 
+newsgroup comp.lang.asm.x86.
+
+Paul Hsieh

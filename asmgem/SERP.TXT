@@ -1,0 +1,3 @@
+SERP.COM is a program written by David Stafford to draw Serpinski's gasket
+in only 30 bytes.  It uses overlapping opcodes, but otherwise the code is
+quite sound.  Requires a VGA card.
