@@ -1,0 +1,67 @@
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³                                                                             ³
+³                       Bushy's Time Stamp and date Killer                    ³
+³                       ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                    ³
+³                                                                             ³
+³This small utility will destroy the Time and Date stamps that are associated ³
+³to  files in directories,  when  you  do  a "DIR",  etc.  Once  you run this ³
+³program, there is no more  date and time  stamps when you do a "DIR" - it is ³
+³just blank.                                                                  ³
+³Cool eh?                                                                     ³
+³                                                                             ³
+³It is also possible to change the date/time to whatever your preference is,  ³
+³for example: Changing _Date to 10240(decimal) and _Time to 26623(decimal),   ³
+³and running TS, then the time and date stamps to whatever files you want,    ³
+³will become                                                                  ³
+³                                                                             ³
+³ TS       TXT       942 00-00-00  12:63p                                     ³
+³                                                                             ³
+³Interesting, that you can have a time as 12:63p. Or even a date as 16-14-00. ³
+³What is the 16th month by the way...?                                        ³
+³                                                                             ³
+³To do this, just change the _Date and _Time EQUalalities at the top of the   ³
+³ASM file, and re-compile.                                                    ³
+³                                                                             ³
+³By hitting "TS", the very simple help will be displayed.                     ³
+³The program has only one option, and that is to do an "all" wipeout - that is³
+³delete, (or change) every file entry in the current directory, except for any³
+³directory entries (only files).                                              ³
+³If no option is added, then the program will want a valid filename to change ³
+³                                                                             ³
+³TS TS.TXT     ...will become:                                                ³
+³                                                                             ³
+³TS       TXT       942                                                       ³
+³                                                                             ³
+³...with nothing in the date or time stamp areas.                             ³
+³                                                                             ³
+³To obliviate the whole directory:                                            ³
+³                                                                             ³
+³TS A                                                                         ³
+³                                                                             ³
+³...and is case InSeNsItIvE. (Dont you just hate people who WrItE tHiS wAy?   ³
+³                                                                             ³
+³ and also you can do something interesting like create a 0 byte file with a  ³
+³ name such as <ALT-255> and having the following in your dir:                ³
+³                                                                             ³
+³                    0                                                        ³
+³                                                                             ³
+³ (where is everything? why is it so dark?)                                   ³
+³ Then have a bunch of them by having " ", "  ", "   ", "    ", "     ", etc  ³
+³ Each space inbetween the quotes are differing lengths of <ALT-255> filenames³
+³ Simple way of creating a 0 byte file is:      MODE 80 > <ALT-255>           ³
+ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´
+³                                                                             ³
+³                                                                             ³
+³* TS was written in about three hours...                                     ³
+³                                                                             ³
+³* Uses dopey Int 21h functions... (no DMA). Slow, yes, though small codeSize.³
+³                                                                             ³
+³* TS was originally two programs, and was reduced from around 450 odd bytes. ³
+³                                                                             ³
+³* TS was written using TASM v4.1                                             ³
+³                                                                             ³
+³* TS runs on anything: 8088 to Pentium Pro Maxa. Why should it not?          ³
+³                                                                             ³
+³* TS is currently ~346 bytes in length.                                      ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
